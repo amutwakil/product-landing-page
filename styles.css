@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
     /* reset */
 
 html, body, div, span, applet, object, iframe,
@@ -26,7 +27,10 @@ time, mark, audio, video {
 
 body{
     font-size: 1.2rem;
+    font-family: Lato;
     position: relative;
+    color: black;
+    background-color: #eee;
 
 }
 
@@ -34,18 +38,34 @@ body{
 
 .nav-bar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     width: 100%;
-    background-color: grey;
+    background-color: #eee;
+    margin-top: 1rem;
     top: 0;
     left: 0;
 }
 
-.flex-nav{
-    padding: 2rem 1rem;
-    flex-grow: 1;
+
+.flex-nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-nav a{
+    text-decoration: none;
+    padding: 1rem 0;
+    color: inherit;
+}
+
+.nav-menu{
+    width: 40%;
+}
+
+.brand-logo{
+    width: 60%;
 }
 
 .logo{
@@ -57,7 +77,7 @@ body{
 .main{
     height: 100vh;
     width: 50%;
-    margin: 25px auto 0;
+    margin: -25px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -65,5 +85,31 @@ body{
 }
 
 .flex-main{
-    padding: 2em 0;
+    padding: 2em;
+    /* outline: auto; */
+}
+
+    /* newsletter */
+
+.newsletter input, button, h2{
+    display: block;
+    margin: 1rem auto;
+}
+
+.newsletter input{
+    padding: .4rem 5rem;
+    font-size: 1rem;
+    margin-top: 1.5em;
+    /* WHY WON'T THIS WORK */
+    text-align: left;
+}
+
+.newsletter button{
+    padding: .4rem 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #f1c40f;
+    border-radius: 5%;
+    
 }
