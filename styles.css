@@ -77,16 +77,11 @@ body{
 .main{
     height: 100vh;
     width: 50%;
-    margin: -25px auto;
+    margin: 25px auto 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
-
-.flex-main{
-    padding: 2em;
-    /* outline: auto; */
 }
 
     /* newsletter */
@@ -105,11 +100,35 @@ body{
 }
 
 .newsletter button{
-    padding: .4rem 3rem;
-    font-size: 1rem;
-    font-weight: 700;
+    padding: .4rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 900;
     text-transform: uppercase;
     background-color: #f1c40f;
     border-radius: 5%;
-    
+    border-width: 0;
+}
+
+    /* features */
+
+.features-big-container{
+    display: flex;
+}
+
+.features-flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.features-flex-col > img{
+    margin: 2rem;
+}
+
+.features-flex-col > div{
+    margin: 1rem 2rem;
+}
+
+.flex-child h2, p{
+    margin: 0;
 }
